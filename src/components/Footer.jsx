@@ -4,17 +4,13 @@ import styled from 'styled-components'
 
 import { lightGrey } from '../styles/colors'
 
-const Container = styled.footer({
+const Footer = styled.footer({
     width: '100%',
     height: '60px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: lightGrey,
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
 
     img: {
         marginLeft: '0.5rem',
@@ -27,8 +23,9 @@ const Container = styled.footer({
         alignItems: 'center',
     },
 })
-const Footer = () => (
-    <Container>
+
+const StyledFooter = () => (
+    <Footer>
         <Link
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             rel="noopener noreferrer"
@@ -38,7 +35,7 @@ const Footer = () => (
                 Powered by <img alt="Vercel Logo" src="/vercel.svg" />
             </span>
         </Link>
-    </Container>
+    </Footer>
 )
 
-export default Footer
+export default StyledFooter
