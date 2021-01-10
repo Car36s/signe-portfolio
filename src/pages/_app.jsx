@@ -2,7 +2,6 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 
 import Footer from '../components/Footer'
-import Navigation from '../components/Navigation'
 import GlobalStyle from '../styles/globals'
 
 const MyApp = ({ Component, pageProps }) => (
@@ -12,7 +11,6 @@ const MyApp = ({ Component, pageProps }) => (
             <link href="/favicon.ico" rel="icon" />
         </Head>
         <GlobalStyle />
-        <Navigation />
         <Component {...pageProps} />
         <Footer />
     </>
